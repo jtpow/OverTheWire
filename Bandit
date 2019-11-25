@@ -1,2 +1,23 @@
-Level 0
+Notes: Text in '' or " " IE, 'ls' or "./-" indicate commands to be typed in the terminal window.
+
+Level 0>1
+  Specify username/port and connect to SSH: ;shh bandit0@bandit.labs.overthewire.org -p2220'
+  Enter noted PW at prompt: 'bandit0'
   
+Level 0>1
+  Once connected on level 0 you need to find the 'readme'. The 'ls' command at the prompt will list the files in the directory. 
+  To view the content, use the following: 'cat readme'
+  boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+  'exit'
+  
+ Level 1>2
+  The password for the next level is stored in a file called - located in the home directory
+  'bandit1@bandit.labs.overthewire.org -p2220'
+  'cd /home'
+  'ls'
+  We are on Level1 so 'cd bandit1' (This is assuming the file would be there)
+  Alternate option: "find './-'"     
+  'cat ./-' 
+  CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+  Explanation: https://unix.stackexchange.com/questions/16357/usage-of-dash-in-place-of-a-filename
+   
