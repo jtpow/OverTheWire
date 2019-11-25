@@ -10,7 +10,7 @@ Level 0>1
   boJ9jbbUNNfktd78OOpsqOltutMc3MY1
   'exit'
   
- Level 1>2
+Level 1>2
   The password for the next level is stored in a file called - located in the home directory
   'bandit1@bandit.labs.overthewire.org -p2220'
   'cd /home'
@@ -19,5 +19,7 @@ Level 0>1
   Alternate option: "find './-'"     
   'cat ./-' 
   CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
-  Explanation: https://unix.stackexchange.com/questions/16357/usage-of-dash-in-place-of-a-filename
+  'exit'
+  
+ 
    
