@@ -48,6 +48,16 @@ Level 1>2
   'cd/ inhere'
   Option1: You could "cd" for each directory to find it.
   Option2: You could move back up to /bandit4 and 'cat ./*' to see the PW mixed in with all the other stuff.
+  Option3(best): from /inhere "run file ./-*" to see that file07 is ASCII, then 'cat ./-file07'
+  koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+  
+  Level 5>6
+    The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+    human-readable
+    1033 bytes in size
+    not executable
+    
+
  
 
  
