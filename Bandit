@@ -1,7 +1,7 @@
 Notes: Text in '' or " " IE, 'ls' or "./-" indicate commands to be typed in the terminal window.
 
 Level 0>1
-  Specify username/port and connect to SSH: ;shh bandit0@bandit.labs.overthewire.org -p2220'
+  Specify username/port and connect to SSH: 'shh bandit0@bandit.labs.overthewire.org -p2220'
   Enter noted PW at prompt: 'bandit0'
   
 Level 0>1
@@ -12,7 +12,7 @@ Level 0>1
   
 Level 1>2
   The password for the next level is stored in a file called - located in the home directory
-  'bandit1@bandit.labs.overthewire.org -p2220'
+  'ssh bandit1@bandit.labs.overthewire.org -p2220'
   'cd /home'
   'ls'
   We are on Level1 so 'cd bandit1' (This is assuming the file would be there)
@@ -20,6 +20,37 @@ Level 1>2
   'cat ./-' 
   CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
   'exit'
+ 
+ Level 2>3
+  The password for the next level is stored in a file called spaces in this filename located in the home directory
+  'ssh bandit2@bandit.labs.overthewire.org -p2220'
+  cd /home
+  cd /bandit2
+  cat 'spaces in this filename' 
+  UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+  'exit'
   
+ Level 3>4
+  The password for the next level is stored in a hidden file in the inhere directory.
+  'ssh bandit3@bandit.labs.overthewire.org -p2220'
+  cd /home
+  cd /bandit3
+  ls -a
+  cat .hidden
+  pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+  'exit' (be sure to exit every SSH session prior to entering a new one, leaving this off from now on)
+  
+ Level 4>5
+  The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+  'ssh bandit4@bandit.labs.overthewire.org -p2220'
+  'cd /home'
+  'cd /bandit4'
+  'cd/ inhere'
+  Option1: You could "cd" for each directory to find it.
+  Option2: You could move back up to /bandit4 and 'cat ./*' to see the PW mixed in with all the other stuff.
+ 
+
+ 
+
  
    
