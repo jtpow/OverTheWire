@@ -126,8 +126,10 @@ Level 12>13
   "mv test test.tar"
   "tar -xvf test.tar" creates a data5.bin file
   "ls" 
-   (continue using 'file' to see the compression type, then uncompress, repeat until you get an ASCII)
+   (continue using 'file' to see the compression type, then 'mv' to rename the file for the compression type, then uncompress using the proper method, repeat until you get an ASCII)
    The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+   
+   
 
    
   
