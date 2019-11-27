@@ -102,6 +102,37 @@ Level 10>11
   
  Level 11>12
   The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+  'ssh bandit9@bandit.labs.overthewire.org -p2220'
+  'cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m''
+  The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+  
+Level 12>13
+  The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
+  "mkdr /tmp/name"
+  "cp data.txt /tmp/name"
+  "xxd -r data.txt test"
+  "file test"
+  "mv test test.gz"
+  "gunzip test.gz"
+  "ls"
+  "file test"
+  "mv test test.bz2"
+  "bzip2 -d test.bz2"
+  "file test"
+  "mv test test.gz"
+  "gunzip test.gz"
+  "ls"
+  "file test"
+  "mv test test.tar"
+  "tar -xvf test.tar" creates a data5.bin file
+  "ls" 
+   (continue using 'file' to see the compression type, then uncompress, repeat until you get an ASCII)
+   The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+   
+  
+   
+
   
   
 
