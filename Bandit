@@ -85,6 +85,13 @@ Level 1>2
 Level 8>9
   The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
   'ssh bandit8@bandit.labs.overthewire.org -p2220'
+  'cat data.txt | sort | uniq -u'
+  UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+  
+Level 9>10
+  The password for the next level is stored in the file data.txt in one of the few human-readable strings, beginning with several ‘=’ characters.
+  'ssh bandit9@bandit.labs.overthewire.org -p2220'
+  
   
 
   
